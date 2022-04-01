@@ -1,7 +1,31 @@
 fileFormatVersion: 2
-guid: e0e0ff978b343d44fb0418ae6bf84f89
+guid: f1c73d5ba90a2d643908481eec166d42
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 482313459195662567
+    second: blowersheet2_0
+  - first:
+      213: -3294356355890070705
+    second: blowersheet2_1
+  - first:
+      213: 5926646125436253518
+    second: blowersheet2_3
+  - first:
+      213: -583177617673078365
+    second: blowersheet2_4
+  - first:
+      213: 7227207795793817121
+    second: blowersheet2_5
+  - first:
+      213: -2813399478396860756
+    second: blowersheet2_6
+  - first:
+      213: 5178903926151375409
+    second: blowersheet2_7
+  - first:
+      213: 6786019251821759087
+    second: blowersheet2_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -68,7 +92,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -80,7 +104,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -92,7 +116,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -104,7 +128,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -115,85 +139,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: blowersheet 1_0
+      name: blowersheet2_1
       rect:
         serializedVersion: 2
-        x: 17
-        y: 72
-        width: 566
-        height: 184
+        x: 9
+        y: 828
+        width: 562
+        height: 173
       alignment: 9
-      pivot: {x: 0.901838, y: 0.1105476}
-      border: {x: 0, y: 0, z: 4, w: 0}
+      pivot: {x: 0.9167196, y: 0.088424414}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7ff2adca910a62430800000000000000
-      internalID: 3757866971221864439
+      spriteID: f4b3f9b39581842d0800000000000000
+      internalID: -3294356355890070705
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blowersheet 1_1
+      name: blowersheet2_4
       rect:
         serializedVersion: 2
-        x: 592
-        y: 104
-        width: 517
-        height: 152
+        x: 2
+        y: 610
+        width: 642
+        height: 150
       alignment: 9
-      pivot: {x: 0.8224094, y: 0.17203994}
-      border: {x: 0, y: 1, z: 0, w: 8}
+      pivot: {x: 0.82871366, y: 0.23120321}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d767d72db332e480800000000000000
-      internalID: -8871471428456192048
+      spriteID: 3a933a9eb0328e7f0800000000000000
+      internalID: -583177617673078365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blowersheet 1_2
+      name: blowersheet2_5
       rect:
         serializedVersion: 2
-        x: 1122
-        y: 129
-        width: 508
-        height: 127
+        x: 2
+        y: 494
+        width: 679
+        height: 110
       alignment: 9
-      pivot: {x: 0.8066555, y: 0.1933446}
-      border: {x: 0, y: 0, z: 4, w: 3}
+      pivot: {x: 0.78805995, y: 0.4064148}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5c345ac0479fc6a0800000000000000
-      internalID: -6426751838706189222
+      spriteID: 12e693ae2333c4460800000000000000
+      internalID: 7227207795793817121
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blowersheet 1_3
+      name: blowersheet2_6
       rect:
         serializedVersion: 2
-        x: 1120
-        y: 16
-        width: 558
-        height: 109
+        x: 13
+        y: 395
+        width: 579
+        height: 74
       alignment: 9
-      pivot: {x: 0.7456761, y: 0.37137341}
-      border: {x: 0, y: 7, z: 0, w: 0}
+      pivot: {x: 0.9195627, y: 0.10056738}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 096bd6ea2cc0c8390800000000000000
-      internalID: -7814857223105038704
+      spriteID: ca6c2e6941cc4f8d0800000000000000
+      internalID: -2813399478396860756
       vertices: []
       indices: 
       edges: []
