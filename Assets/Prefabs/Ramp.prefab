@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 6411406765153094236}
   - component: {fileID: 6411406765153094235}
   - component: {fileID: 6411406765153094234}
-  - component: {fileID: 6411406765153094238}
-  - component: {fileID: 6411406765153094237}
-  - component: {fileID: 6411406765153094233}
+  - component: {fileID: 7411355699556251458}
+  - component: {fileID: 6766766957770454186}
+  - component: {fileID: 7978734339745489996}
   m_Layer: 0
   m_Name: Ramp
   m_TagString: Item
@@ -107,7 +107,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!68 &6411406765153094238
+--- !u!68 &7411355699556251458
 EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -123,13 +123,13 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -2.69, y: 2.6791828}
-  - {x: 2.6943917, y: -2.6703985}
+  - {x: -2.6894732, y: 2.670158}
+  - {x: 2.6896589, y: -2.6821845}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!68 &6411406765153094237
+--- !u!68 &6766766957770454186
 EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,13 +145,13 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -2.685608, y: -2.6703985}
-  - {x: 2.69, y: -2.6703987}
+  - {x: -2.6970844, y: -2.6854177}
+  - {x: 2.6853542, y: -2.6761258}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!68 &6411406765153094233
+--- !u!68 &7978734339745489996
 EdgeCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -167,8 +167,8 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -2.69, y: -2.6791828}
-  - {x: -2.6903267, y: 2.679183}
+  - {x: -2.6990323, y: -2.6825366}
+  - {x: -2.6885786, y: 2.672352}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0

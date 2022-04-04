@@ -10,7 +10,7 @@ public class ButtonManager : MonoBehaviour
     public GameObject volumeSlider;
 
     [Header("Script References")]
-    public AudioManager audio;
+    //public AudioManager audio;
     private Slider slider;
 
     void Start()
