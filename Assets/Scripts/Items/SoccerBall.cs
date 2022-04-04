@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoccerBall : MonoBehaviour
+public class SoccerBall : Item
 {
     private void OnCollisionEnter(Collision obj)
     {
