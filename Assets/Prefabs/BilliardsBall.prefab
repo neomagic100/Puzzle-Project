@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5590688285457482425}
   - component: {fileID: 4228869687507699528}
   - component: {fileID: 1078619443610160930}
+  - component: {fileID: 1747731570}
   m_Layer: 0
   m_Name: BilliardsBall
   m_TagString: Item
@@ -29,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 2309793916699284754}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.112576, y: 0.5458443, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3033, y: 0.2891, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -134,3 +135,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2914dfd6c750e3a4782af48e90cbb23e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &1747731570
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2309793916699284754}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: be54bfecc3d495c46b8778ec7e72ff8b, type: 2}
+  m_CullingMode: 2
+  m_UpdateMode: 1
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
