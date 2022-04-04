@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8949458206616260592}
   m_Layer: 0
   m_Name: Ramp 1
-  m_TagString: Item
+  m_TagString: ItemImage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

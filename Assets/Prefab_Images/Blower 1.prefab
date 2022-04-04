@@ -10,11 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 8334249323411715167}
   - component: {fileID: 6741564067105956915}
-  - component: {fileID: 7173949445310137659}
   - component: {fileID: 5667182484970406521}
   m_Layer: 0
   m_Name: Blower 1
-  m_TagString: Item
+  m_TagString: ItemImage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84,19 +83,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7173949445310137659
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3012333427518426411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0948919d4fddbea4e81c74a417bb765a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 0}
 --- !u!60 &5667182484970406521
 PolygonCollider2D:
   m_ObjectHideFlags: 0
