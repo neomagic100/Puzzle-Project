@@ -23,6 +23,8 @@ public class UIManager : MonoBehaviour
 
     public static bool isRunning = false;
 
+    private GameObject[] tempItemArr;
+
     // Same format as itemImages array so that they keep track of which items are which
     public static GameObject[] items;
 
@@ -42,6 +44,8 @@ public class UIManager : MonoBehaviour
     {
         // Finds the ItemImages that were created by the player
         GameObject[] _items = GameObject.FindGameObjectsWithTag("ItemImage");
+
+        tempItemArr = _items;
 
         // No Items Yet
         if (_items.Length <= 0)
@@ -70,13 +74,10 @@ public class UIManager : MonoBehaviour
 
     public void OnStopButton()
     {
-        // Finds the ItemImages that were created by the player
-        GameObject[] _items = GameObject.FindGameObjectsWithTag("ItemImage");
-
         // Finds the current Items that have been instantiated
         GameObject[] curItems = GameObject.FindGameObjectsWithTag("Item");
 
-        foreach (GameObject item in curItems)
+        foreach (GameObject item in tempItemArr)
         {
             item.SetActive(true);
         }
@@ -104,6 +105,12 @@ public class UIManager : MonoBehaviour
 
         // Removes all Item Images
         foreach (GameObject item in _items)
+        {
+            Destroy(item);
+        }
+
+        // Cleans the Cache
+        foreach (GameObject item in tempItemArr)
         {
             Destroy(item);
         }
