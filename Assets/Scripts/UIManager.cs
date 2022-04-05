@@ -42,9 +42,13 @@ public class UIManager : MonoBehaviour
 
     public void OnRunButton()
     {
+        // Audio
+        AudioManager.instance.buttonClick.Play();
+
         // Finds the ItemImages that were created by the player
         GameObject[] _items = GameObject.FindGameObjectsWithTag("ItemImage");
 
+        // Stores items for Stop and Reset
         tempItemArr = _items;
 
         // No Items Yet
@@ -74,6 +78,9 @@ public class UIManager : MonoBehaviour
 
     public void OnStopButton()
     {
+        // Audio
+        AudioManager.instance.buttonClick.Play();
+
         // Finds the current Items that have been instantiated
         GameObject[] curItems = GameObject.FindGameObjectsWithTag("Item");
 
@@ -97,6 +104,9 @@ public class UIManager : MonoBehaviour
 
     public void OnResetButton()
     {
+        // Audio
+        AudioManager.instance.buttonClick.Play();
+
         // Finds the ItemImages that were created by the player
         GameObject[] _items = GameObject.FindGameObjectsWithTag("ItemImage");
 
