@@ -5,7 +5,6 @@ using System;
 
 public class BilliardsBall : Item
 {
-    private float old_position_x, old_position_y;
     private Animator ballAnimator;
     private Rigidbody2D rb;
     private Vector2 atRest;
