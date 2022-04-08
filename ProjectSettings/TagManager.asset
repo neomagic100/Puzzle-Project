@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Item
   - ItemImage
+  - goal
+  - UI
   layers:
   - Default
   - TransparentFX
