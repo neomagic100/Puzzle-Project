@@ -10,7 +10,6 @@ public class ButtonManager : MonoBehaviour
     public GameObject volumeSlider;
 
     [Header("Script References")]
-    //public AudioManager audio;
     private Slider slider;
 
     void Start()
@@ -21,7 +20,7 @@ public class ButtonManager : MonoBehaviour
     void Update()
     {
         // Slider value is between 0 - 1 as a percentage
-        // audio.volume = slider.value; // Uncomment this once an AudioManager is established
+        AudioManager.volume = slider.value; // Uncomment this once an AudioManager is established
     }
 
     public void onPlayButton()
