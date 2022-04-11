@@ -38,4 +38,28 @@ public class ButtonManager : MonoBehaviour
     {
         slider.value = 0f;
     }
+
+    // Level Select
+    protected void OnLevel1Button()
+    {
+
+    }
+
+    protected void OnLevel2Button()
+    {
+
+    }
+
+    protected void OnLevel3Button()
+    {
+
+    }
+
+    protected void OnMainMenuButton()
+    {
+
+    }
+
+
+
 }
