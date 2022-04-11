@@ -35,6 +35,11 @@ public class ButtonManager : MonoBehaviour
         Application.Quit();
     }
 
+    public void onLevelSelect()
+    {
+
+    }
+
     public void OnMuteButton()
     {
         slider.value = 0f;
