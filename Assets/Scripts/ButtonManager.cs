@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class ButtonManager : MonoBehaviour
 {
+
     [Header("Unity References")]
     public GameObject volumeSlider;
 
@@ -40,22 +41,22 @@ public class ButtonManager : MonoBehaviour
     }
 
     // Level Select
-    protected void OnLevel1Button()
+    public void OnLevel1Button()
     {
 
     }
 
-    protected void OnLevel2Button()
+    public void OnLevel2Button()
     {
 
     }
 
-    protected void OnLevel3Button()
+    public void OnLevel3Button()
     {
 
     }
 
-    protected void OnMainMenuButton()
+    public void OnMainMenuButton()
     {
 
     }
