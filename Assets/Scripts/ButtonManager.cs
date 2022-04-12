@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class ButtonManager : MonoBehaviour
 {
-
     [Header("Unity References")]
     public GameObject volumeSlider;
 
@@ -21,7 +20,7 @@ public class ButtonManager : MonoBehaviour
     void Update()
     {
         // Slider value is between 0 - 1 as a percentage
-        AudioManager.volume = slider.value; // Uncomment this once an AudioManager is established
+        AudioManager.volume = slider.value;
     }
 
     public void onPlayButton()
@@ -35,37 +34,28 @@ public class ButtonManager : MonoBehaviour
         Application.Quit();
     }
 
-    public void onLevelSelect()
-    {
-
-    }
-
     public void OnMuteButton()
     {
         slider.value = 0f;
     }
 
-    // Level Select
-    public void OnLevel1Button()
+    public void OnLevelOne()
     {
-
+        SceneManager.LoadScene(1);
     }
 
-    public void OnLevel2Button()
+    public void OnLevelTwo()
     {
-
+        SceneManager.LoadScene(2);
     }
 
-    public void OnLevel3Button()
+    public void OnLevelThree()
     {
-
+        SceneManager.LoadScene(3);
     }
 
-    public void OnMainMenuButton()
+    public void OnSandBox()
     {
-
+        SceneManager.LoadScene(4);
     }
-
-
-
 }
