@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
-guid: 06941802979660949a2ca5cb8e5d8a39
-=======
-guid: 17f50a627f3ee974db4bfb66053b4996
->>>>>>> Stashed changes
+guid: f785ab0b58d3eb0499de56bc2a2ed4e7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -28,7 +24,6 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
-  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -93,7 +88,6 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
