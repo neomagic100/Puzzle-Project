@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class UIManager : MonoBehaviour
     [Header("Unity References")]
     public GameObject runButton;
     public GameObject stopButton;
+    public GameObject inGameOptions;
 
     public static bool isRunning = false;
 
@@ -38,6 +40,7 @@ public class UIManager : MonoBehaviour
         // Defaults these buttons
         runButton.SetActive(true);
         stopButton.SetActive(false);
+        inGameOptions.SetActive(false);
     }
 
     public void OnRunButton()
@@ -136,5 +139,10 @@ public class UIManager : MonoBehaviour
         stopButton.SetActive(false);
 
         isRunning = false;
+    }
+
+    public void OnMainMenuButton()
+    {
+        SceneManager.LoadScene(0);
     }
 }
