@@ -27,10 +27,6 @@ void Start() {
 
     void FixedUpdate() {
 		 touchSharp = Physics2D.OverlapCircle(SharpCheck.position, SharpCheckRadius, WhatIsSharp);
-<<<<<<< Updated upstream
-		 touchSharp = true;
-=======
->>>>>>> Stashed changes
 		 if(touchSharp){
 			 myBalloon.Play("balloonPop");
 			 if(audioPlaying == false){
