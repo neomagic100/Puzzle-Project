@@ -8,12 +8,6 @@ public class Blower : Item
     public Rigidbody2D rb;
     private Animator blowingAnimator;
     private bool audioPlayed;
-    private bool animationPlayed;
-
-    public Blower()
-    {
-        
-    }
   
     // When an item collides with Blower, play sound and animation
     private void OnCollisionEnter2D(Collision2D collision)
@@ -21,18 +15,12 @@ public class Blower : Item
         // If a collision is detected with an Item
         if (collision.gameObject.CompareTag("Item"))
         {
+            blowingAnimator = GetComponent<Animator>();
+           
             if (!audioPlayed)
             {
                 audioSrc.Play();
             }
-            
-            if (!animationPlayed)
-            {
-                animationPlayed = true;
-                
-                blowingAnimator.Play("blowing_anim");
-            }
-            
             
         }
     }
@@ -40,10 +28,7 @@ public class Blower : Item
     // When item leaves Blower, stop animation
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (animationPlayed)
-        {
-            blowingAnimator.enabled = false;
-        }
+        blowingAnimator.StartPlayback();
     }
 
     // Start is called before the first frame update
@@ -60,23 +45,6 @@ public class Blower : Item
         {
             audioPlayed = false;
         }
-
-
-        // Load blowing animation
-        blowingAnimator = GetComponent<Animator>();
-        
-
-        if (blowingAnimator == null)
-        {
-            Debug.LogError("Cannot load ANIMATOR for the Blower Item.");
-        }
-        else
-        {
-            animationPlayed = false;
-            blowingAnimator.speed = 0.9f;
-        }
-        
-
 
     }
 
