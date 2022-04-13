@@ -8,7 +8,7 @@ public class Blower : Item
     public Rigidbody2D rb;
     private Animator blowingAnimator;
     private bool audioPlayed;
-    
+    private Vector2 vel = Vector2.zero;
     
   
     // When an item collides with Blower, play sound and animation
@@ -18,23 +18,44 @@ public class Blower : Item
         // If a collision is detected with an Item
         if (collision.gameObject.CompareTag("Item"))
         {
-           
             blowingAnimator = gameObject.GetComponent<Animator>();
-           
-           
+                      
             if (!audioPlayed)
             {
                 audioSrc.Play();
             }
+
+            // Set velocity that the blower will send other item
+            vel = new Vector2(5.5f, 0f);
         }
     }
 
+    // When object is in trigger zone
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        GameObject target;
+        Rigidbody2D targetRb;
+
+        if (collision.gameObject.CompareTag("Item"))
+        {
+            target = collision.gameObject;
+            targetRb = target.GetComponent<Rigidbody2D>();
+
+            // Set the item in the trigger zone to vel - calculated when the blower has a collision
+            targetRb.velocity = vel;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        blowingAnimator.StopPlayback();
+    }
 
 
     // When item leaves Blower, stop animation
     private void OnCollisionExit2D(Collision2D collision)
     {
-        
+       blowingAnimator.StopPlayback();
     }
 
     // Start is called before the first frame update
@@ -51,7 +72,7 @@ public class Blower : Item
         {
             audioPlayed = false;
         }
-     
+        blowingAnimator = gameObject.GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -64,11 +85,4 @@ public class Blower : Item
 
     }
 
-    private void setupEffector(PointEffector2D pe)
-    {
-        pe.forceSource = EffectorSelection2D.Rigidbody;
-        pe.forceTarget = EffectorSelection2D.Rigidbody;
-        pe.forceMagnitude = 100;
-        pe.forceMode = EffectorForceMode2D.Constant;
-    }
 }
