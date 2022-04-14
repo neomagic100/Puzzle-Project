@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 8334249323411715167}
   - component: {fileID: 6741564067105956915}
   - component: {fileID: 5667182484970406521}
+  - component: {fileID: 4858354659128327746}
+  - component: {fileID: -6752281475823358093}
   m_Layer: 0
   m_Name: Blower 1
   m_TagString: ItemImage
@@ -183,3 +185,28 @@ PolygonCollider2D:
       - {x: -3.491964, y: -0.14297424}
       - {x: -2.641964, y: -0.14297424}
       - {x: -2.631964, y: -0.13297424}
+--- !u!114 &4858354659128327746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3012333427518426411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3fa4992157ed554fb2372d9d0fe92cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-6752281475823358093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3012333427518426411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b598323edb0ef5e4a91295da55d0bb22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 7451228926875954547, guid: 7c69cf883cd7ba74d82b932232cd2a7f, type: 3}

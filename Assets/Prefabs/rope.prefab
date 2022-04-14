@@ -244,7 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57c008f954fe54a8bb972de1018a2cb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RootBone: {fileID: 4594898370054628159}
+  m_RootBone: {fileID: 2122736757697075633}
   m_BoneTransforms: []
   m_Bounds:
     m_Center: {x: 0.08505422, y: -0.0000019073486, z: 0}
