@@ -42,7 +42,6 @@ public class UIManager : MonoBehaviour
         runButton.SetActive(true);
         stopButton.SetActive(false);
         inGameOptions.SetActive(false);
-        victoryScreen.SetActive(false);
     }
 
     public void OnRunButton()
@@ -169,5 +168,10 @@ public class UIManager : MonoBehaviour
     {
         // Audio
         AudioManager.instance.Click();
+    }
+
+    public void OnVictory()
+    {
+        Instantiate(victoryScreen);
     }
 }
