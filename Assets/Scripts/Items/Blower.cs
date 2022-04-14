@@ -28,6 +28,7 @@ public class Blower : Item
                 audioSrc.Play();
             }
 
+            // In case there is no Target yet
             if (target == null)
                 return;
 
