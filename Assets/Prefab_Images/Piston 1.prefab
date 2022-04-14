@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 2014775113488057778}
   - component: {fileID: 2014775113488057779}
   - component: {fileID: 3147475035104400483}
+  - component: {fileID: -4996672587730139090}
+  - component: {fileID: -7905772744107673614}
   m_Layer: 0
   m_Name: Piston 1
   m_TagString: ItemImage
@@ -69,8 +71,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -990676865
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 6074511651645386051, guid: 57cefc3f0ab52b94eb78260527e0c689, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -196,3 +198,28 @@ PolygonCollider2D:
       - {x: 0.55915236, y: -1.8364608}
       - {x: 0.77915233, y: -1.7464608}
       - {x: 0.9791524, y: -1.6464609}
+--- !u!114 &-4996672587730139090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014775113488057777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3fa4992157ed554fb2372d9d0fe92cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-7905772744107673614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014775113488057777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b598323edb0ef5e4a91295da55d0bb22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 3484652052786869458, guid: 51bc42c171af8184f8cbf9c54efb174c, type: 3}

@@ -941,6 +941,8 @@ GameObject:
   - component: {fileID: 3982232909321434387}
   - component: {fileID: 7469909102192011492}
   - component: {fileID: 3931761336006427357}
+  - component: {fileID: -3103532014453709906}
+  - component: {fileID: 6096067929498050614}
   m_Layer: 0
   m_Name: ropeUser
   m_TagString: Untagged
@@ -1010,8 +1012,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -990676865
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 200b7bc5929a5824b88b95b777c23904, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1088,6 +1090,31 @@ MonoBehaviour:
     m_Extent: {x: 0.32013553, y: 8.200003, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
+--- !u!114 &-3103532014453709906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7723692008151219916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3fa4992157ed554fb2372d9d0fe92cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6096067929498050614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7723692008151219916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b598323edb0ef5e4a91295da55d0bb22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1924464456515457611, guid: 4394180772fb89b4cb892df5e45394c6, type: 3}
 --- !u!1 &8257939035028300155
 GameObject:
   m_ObjectHideFlags: 0

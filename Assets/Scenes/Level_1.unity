@@ -240,7 +240,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &709935283
 Transform:
   m_ObjectHideFlags: 0
@@ -713,46 +713,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: UserInterface
       objectReference: {fileID: 0}
-    - target: {fileID: 951001153692234685, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
-      propertyPath: fanPrefab
-      value: 
-      objectReference: {fileID: 7744535864834401563, guid: d7beed3b80830d24caabbe337c901647, type: 3}
-    - target: {fileID: 951001153692234685, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
-      propertyPath: rampPrefab
-      value: 
-      objectReference: {fileID: 6411406765153094232, guid: d870625f393835c4f867611575defe73, type: 3}
-    - target: {fileID: 951001153692234685, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
-      propertyPath: ropePrefab
-      value: 
-      objectReference: {fileID: 1924464456515457611, guid: 4394180772fb89b4cb892df5e45394c6, type: 3}
-    - target: {fileID: 951001153692234685, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
-      propertyPath: pistonPrefab
-      value: 
-      objectReference: {fileID: 3484652052786869458, guid: 51bc42c171af8184f8cbf9c54efb174c, type: 3}
-    - target: {fileID: 951001153692234685, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
-      propertyPath: seesawPrefab
-      value: 
-      objectReference: {fileID: 4282905582746167953, guid: da3a16997646d694eaa6691e60457457, type: 3}
-    - target: {fileID: 951001153692234685, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
-      propertyPath: soccerPrefab
-      value: 
-      objectReference: {fileID: 5123928067082668621, guid: 32b6cc656d359ac44906d28d24ad86d8, type: 3}
-    - target: {fileID: 951001153692234685, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
-      propertyPath: balloonPrefab
-      value: 
-      objectReference: {fileID: 823795149837207850, guid: 680ba6fefd882ba4588ee8e32f836e5f, type: 3}
-    - target: {fileID: 951001153692234685, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
-      propertyPath: billiardPrefab
-      value: 
-      objectReference: {fileID: 2309793916699284754, guid: 0ebbb0357eac54249afa77af1a95ce60, type: 3}
-    - target: {fileID: 951001153692234685, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
-      propertyPath: treadmillPrefab
-      value: 
-      objectReference: {fileID: 7771720787353681690, guid: 79959d6b8d71cd64bbb23ef5485a8dd0, type: 3}
-    - target: {fileID: 951001153692234685, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
-      propertyPath: trampolinePrefab
-      value: 
-      objectReference: {fileID: 3076816551258819421, guid: 4e4eea5d0f59c224fa91f69af783fc56, type: 3}
     - target: {fileID: 951001153829986951, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -802,9 +762,29 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
-      propertyPath: rampImagePrefab
+      propertyPath: fanImagePrefab
       value: 
-      objectReference: {fileID: 5364086440782209508, guid: e5c5918ba1bb60d4f841fe3ede9e8cf0, type: 3}
+      objectReference: {fileID: 4747520681916304576, guid: 56eec0bb84608a24c803d91cb01fa91d, type: 3}
+    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
+      propertyPath: ropeImagePrefab
+      value: 
+      objectReference: {fileID: 7723692008151219916, guid: 46026315969caa6438d01d43bc446e46, type: 3}
+    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
+      propertyPath: seesawImagePrefab
+      value: 
+      objectReference: {fileID: 1137789977504234757, guid: abfbca85ffa4b06438cc0d352c5f088f, type: 3}
+    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
+      propertyPath: soccerImagePrefab
+      value: 
+      objectReference: {fileID: 8880369852847719839, guid: e742dfc6afa0c31498a6a6d6c80b84f0, type: 3}
+    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
+      propertyPath: balloonImagePrefab
+      value: 
+      objectReference: {fileID: 5793123740001822868, guid: ac628f09a35da7c44905d181da691ec1, type: 3}
+    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
+      propertyPath: billiardImagePrefab
+      value: 
+      objectReference: {fileID: 9142917933919330314, guid: b16d00b8dcfe84c4a82e09c220a23382, type: 3}
     - target: {fileID: 951001154088987917, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

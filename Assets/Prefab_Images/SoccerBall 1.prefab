@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4522676113586737303}
   - component: {fileID: 7609631115161558941}
   - component: {fileID: 5421345951304332305}
+  - component: {fileID: -2009122548265608955}
+  - component: {fileID: -8476987735306512629}
   m_Layer: 0
   m_Name: SoccerBall 1
   m_TagString: ItemImage
@@ -69,8 +71,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -990676865
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: a5df1484e271f9e45a142d9a8cee131f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -99,3 +101,28 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.037475437}
   serializedVersion: 2
   m_Radius: 3.0989356
+--- !u!114 &-2009122548265608955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8880369852847719839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3fa4992157ed554fb2372d9d0fe92cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-8476987735306512629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8880369852847719839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b598323edb0ef5e4a91295da55d0bb22, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 5123928067082668621, guid: 32b6cc656d359ac44906d28d24ad86d8, type: 3}
