@@ -15,6 +15,7 @@ public class ButtonManager : MonoBehaviour
     void Start()
     {
         slider = volumeSlider.GetComponent<Slider>();
+        slider.value = AudioManager.instance.volume;
     }
 
     void Update()
