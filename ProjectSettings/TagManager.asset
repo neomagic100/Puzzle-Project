@@ -9,6 +9,8 @@ TagManager:
   - goal
   - UI
   - levelscene
+  - sharp
+  - LevelObject
   layers:
   - Default
   - TransparentFX
