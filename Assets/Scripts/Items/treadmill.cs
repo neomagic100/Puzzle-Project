@@ -9,6 +9,8 @@ public class treadmill : MonoBehaviour
     void Start()
     {
         audioSrc = GetComponent<AudioSource>();
+
+        audioSrc.volume = AudioManager.instance.volume;
     }
 
     // Update is called once per frame

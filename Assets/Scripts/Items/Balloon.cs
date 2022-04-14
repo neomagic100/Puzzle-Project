@@ -22,6 +22,7 @@ void Start() {
      rb = GetComponent<Rigidbody2D>();
 	 myBalloon = GetComponent<Animator>();
 	 popSound = GetComponent<AudioSource>();
+	 popSound.volume = AudioManager.instance.volume;
 	 audioPlaying = false;
 	}
 

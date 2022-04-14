@@ -68,6 +68,7 @@ public class Blower : Item
     {     
         // Load blowing sound fx
         audioSrc = GetComponent<AudioSource>();
+        audioSrc.volume = AudioManager.instance.volume;
 
         if (audioSrc == null)
         {
