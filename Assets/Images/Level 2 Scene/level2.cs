@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class level2 : MonoBehaviour
+public class level3 : MonoBehaviour
 {
     AudioSource audioSrc;
 
@@ -16,6 +16,6 @@ public class level2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 }
