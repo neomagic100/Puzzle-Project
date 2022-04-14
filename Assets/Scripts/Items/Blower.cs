@@ -42,7 +42,8 @@ public class Blower : Item
             targetRb = target.GetComponent<Rigidbody2D>();
 
             // Set the item in the trigger zone to vel - calculated when the blower has a collision
-            targetRb.velocity = vel;
+            targetRb.AddForce(vel);
+            Debug.Log(targetRb.velocity);
         }
     }
 
