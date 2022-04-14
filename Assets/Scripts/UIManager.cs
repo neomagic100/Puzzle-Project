@@ -48,7 +48,7 @@ public class UIManager : MonoBehaviour
     public void OnRunButton()
     {
         // Audio
-        Click();
+        AudioManager.instance.Click();
 
         // Finds the ItemImages that were created by the player
         GameObject[] _items = GameObject.FindGameObjectsWithTag("ItemImage");
@@ -84,7 +84,7 @@ public class UIManager : MonoBehaviour
     public void OnStopButton()
     {
         // Audio
-        Click();
+        AudioManager.instance.Click();
 
         // Finds the current Items that have been instantiated
         GameObject[] curItems = GameObject.FindGameObjectsWithTag("Item");
@@ -110,7 +110,7 @@ public class UIManager : MonoBehaviour
     public void OnResetButton()
     {
         // Audio
-        Click();
+        AudioManager.instance.Click();
 
         // Finds the ItemImages that were created by the player
         GameObject[] _items = GameObject.FindGameObjectsWithTag("ItemImage");
@@ -146,7 +146,7 @@ public class UIManager : MonoBehaviour
     public void OnMainMenuButton()
     {
         // Audio
-        Click();
+        AudioManager.instance.Click();
 
         SceneManager.LoadScene(0);
     }
@@ -154,7 +154,7 @@ public class UIManager : MonoBehaviour
     public void OnNextLevelButton()
     {
         // Audio
-        Click();
+        AudioManager.instance.Click();
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
@@ -162,19 +162,12 @@ public class UIManager : MonoBehaviour
     public void OnBackButton()
     {
         // Audio
-        Click();
+        AudioManager.instance.Click();
     }
 
     public void OnSettingsButton()
     {
         // Audio
-        Click();
-    }
-
-    private void Click()
-    {
-        if (AudioManager.instance == null)
-            return;
-        AudioManager.instance.buttonClick.Play();
+        AudioManager.instance.Click();
     }
 }

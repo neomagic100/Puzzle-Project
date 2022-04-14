@@ -25,8 +25,9 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
     }
 
-    public void OnButtonClick()
+    public void Click()
     {
+        buttonClick.volume = volume;
         buttonClick.Play();
     }
 }
