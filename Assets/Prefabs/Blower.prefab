@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 3254727536514000227}
   - component: {fileID: 1999708705}
   - component: {fileID: 8806927487532283924}
-  - component: {fileID: 5324963498586928214}
   m_Layer: 0
   m_Name: Blower
   m_TagString: Item
@@ -75,8 +74,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -990676865
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -3294356355890070705, guid: f1c73d5ba90a2d643908481eec166d42, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -364,23 +363,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.6213636, y: 0.621809}
   m_EdgeRadius: 0
---- !u!250 &5324963498586928214
-PointEffector2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7451228926875954547}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceMagnitude: 10
-  m_ForceVariation: 0
-  m_DistanceScale: 1
-  m_ForceSource: 0
-  m_ForceTarget: 0
-  m_ForceMode: 0
-  m_Drag: 0
-  m_AngularDrag: 0

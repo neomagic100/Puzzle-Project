@@ -8,39 +8,54 @@ public class Blower : Item
     public Rigidbody2D rb;
     private Animator blowingAnimator;
     private bool audioPlayed;
-    private bool collDetected = false;
+    private Vector2 vel = Vector2.zero;
     
   
     // When an item collides with Blower, play sound and animation
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        collDetected = true;
-        gameObject.GetComponent<BoxCollider2D>().usedByEffector = collDetected;
+        
         // If a collision is detected with an Item
         if (collision.gameObject.CompareTag("Item"))
         {
-            // Since it is now blowing, set the trigger zone to true
-            gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
-        
-            blowingAnimator = GetComponent<Animator>();
-           
+            blowingAnimator = gameObject.GetComponent<Animator>();
+                      
             if (!audioPlayed)
             {
                 audioSrc.Play();
             }
+
+            // Set velocity that the blower will send other item
+            vel = new Vector2(5.5f, 0f);
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    // When object is in trigger zone
+    private void OnTriggerStay2D(Collider2D collision)
     {
-        gameObject.GetComponent<BoxCollider2D>().usedByEffector = collDetected;
+        GameObject target;
+        Rigidbody2D targetRb;
+
+        if (collision.gameObject.CompareTag("Item"))
+        {
+            target = collision.gameObject;
+            targetRb = target.GetComponent<Rigidbody2D>();
+
+            // Set the item in the trigger zone to vel - calculated when the blower has a collision
+            targetRb.velocity = vel;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        blowingAnimator.StopPlayback();
     }
 
 
     // When item leaves Blower, stop animation
     private void OnCollisionExit2D(Collision2D collision)
     {
-        blowingAnimator.StartPlayback();
+       blowingAnimator.StopPlayback();
     }
 
     // Start is called before the first frame update
@@ -57,7 +72,7 @@ public class Blower : Item
         {
             audioPlayed = false;
         }
-
+        blowingAnimator = gameObject.GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -68,14 +83,6 @@ public class Blower : Item
             audioPlayed = true;
         }
 
-        Debug.Log(collDetected);
     }
 
-    private void setupEffector(PointEffector2D pe)
-    {
-        pe.forceSource = EffectorSelection2D.Rigidbody;
-        pe.forceTarget = EffectorSelection2D.Rigidbody;
-        pe.forceMagnitude = 100;
-        pe.forceMode = EffectorForceMode2D.Constant;
-    }
 }
