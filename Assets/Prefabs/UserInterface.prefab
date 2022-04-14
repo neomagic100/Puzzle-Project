@@ -2159,12 +2159,12 @@ MonoBehaviour:
   treadmillImagePrefab: {fileID: 6993723891485814334, guid: b3250a77a0602e3429f414c53bec6681, type: 3}
   pistonImagePrefab: {fileID: 2014775113488057777, guid: f4ef1a554cd15854c96ba6c26be98240, type: 3}
   trampolineImagePrefab: {fileID: 3076816551258819421, guid: 4e4eea5d0f59c224fa91f69af783fc56, type: 3}
-  fanImagePrefab: {fileID: 0}
-  ropeImagePrefab: {fileID: 0}
-  balloonImagePrefab: {fileID: 0}
-  billiardImagePrefab: {fileID: 0}
-  soccerImagePrefab: {fileID: 0}
-  seesawImagePrefab: {fileID: 0}
+  fanImagePrefab: {fileID: 4747520681916304576, guid: 56eec0bb84608a24c803d91cb01fa91d, type: 3}
+  ropeImagePrefab: {fileID: 7723692008151219916, guid: 46026315969caa6438d01d43bc446e46, type: 3}
+  balloonImagePrefab: {fileID: 5793123740001822868, guid: ac628f09a35da7c44905d181da691ec1, type: 3}
+  billiardImagePrefab: {fileID: 9142917933919330314, guid: b16d00b8dcfe84c4a82e09c220a23382, type: 3}
+  soccerImagePrefab: {fileID: 8880369852847719839, guid: e742dfc6afa0c31498a6a6d6c80b84f0, type: 3}
+  seesawImagePrefab: {fileID: 1137789977504234757, guid: abfbca85ffa4b06438cc0d352c5f088f, type: 3}
   rampImagePrefab: {fileID: 5364086440782209508, guid: e5c5918ba1bb60d4f841fe3ede9e8cf0, type: 3}
 --- !u!114 &951001153947259869
 MonoBehaviour:

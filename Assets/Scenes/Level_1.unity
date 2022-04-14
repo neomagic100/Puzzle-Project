@@ -464,6 +464,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blower
       objectReference: {fileID: 0}
+    - target: {fileID: 8806927487532283924, guid: 7c69cf883cd7ba74d82b932232cd2a7f, type: 3}
+      propertyPath: m_Size.y
+      value: 1.5891103
+      objectReference: {fileID: 0}
+    - target: {fileID: 8806927487532283924, guid: 7c69cf883cd7ba74d82b932232cd2a7f, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.40255874
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c69cf883cd7ba74d82b932232cd2a7f, type: 3}
 --- !u!1001 &1330040433
@@ -1029,30 +1037,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
-      propertyPath: fanImagePrefab
-      value: 
-      objectReference: {fileID: 4747520681916304576, guid: 56eec0bb84608a24c803d91cb01fa91d, type: 3}
-    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
-      propertyPath: ropeImagePrefab
-      value: 
-      objectReference: {fileID: 7723692008151219916, guid: 46026315969caa6438d01d43bc446e46, type: 3}
-    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
-      propertyPath: seesawImagePrefab
-      value: 
-      objectReference: {fileID: 1137789977504234757, guid: abfbca85ffa4b06438cc0d352c5f088f, type: 3}
-    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
-      propertyPath: soccerImagePrefab
-      value: 
-      objectReference: {fileID: 8880369852847719839, guid: e742dfc6afa0c31498a6a6d6c80b84f0, type: 3}
-    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
-      propertyPath: balloonImagePrefab
-      value: 
-      objectReference: {fileID: 5793123740001822868, guid: ac628f09a35da7c44905d181da691ec1, type: 3}
-    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
-      propertyPath: billiardImagePrefab
-      value: 
-      objectReference: {fileID: 9142917933919330314, guid: b16d00b8dcfe84c4a82e09c220a23382, type: 3}
     - target: {fileID: 951001154088987917, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
