@@ -20,7 +20,7 @@ public class ButtonManager : MonoBehaviour
     void Update()
     {
         // Slider value is between 0 - 1 as a percentage
-        AudioManager.volume = slider.value;
+        AudioManager.instance.volume = slider.value;
     }
 
     public void onPlayButton()

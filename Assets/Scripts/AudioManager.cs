@@ -11,11 +11,14 @@ public class AudioManager : MonoBehaviour
     [Header("Unity References")]
     public AudioSource buttonClick;
 
-    public static float volume;
+
+    public float volume = 0.5f;
 
     void Awake()
     {
         instance = this;
+
+        DontDestroyOnLoad(gameObject);
     }
 
     public void OnButtonClick()
