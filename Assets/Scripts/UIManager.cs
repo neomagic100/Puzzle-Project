@@ -22,6 +22,7 @@ public class UIManager : MonoBehaviour
     public GameObject runButton;
     public GameObject stopButton;
     public GameObject inGameOptions;
+    public GameObject victoryScreen;
 
     public static bool isRunning = false;
 
@@ -41,6 +42,7 @@ public class UIManager : MonoBehaviour
         runButton.SetActive(true);
         stopButton.SetActive(false);
         inGameOptions.SetActive(false);
+        victoryScreen.SetActive(false);
     }
 
     public void OnRunButton()

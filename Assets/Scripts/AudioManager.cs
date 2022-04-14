@@ -17,4 +17,9 @@ public class AudioManager : MonoBehaviour
     {
         instance = this;
     }
+
+    public void OnButtonClick()
+    {
+        buttonClick.Play();
+    }
 }
