@@ -34,7 +34,7 @@ public class ToolkitManager : MonoBehaviour
 
     public void OnBlowerButton()
     {
-        AudioManager.instance.Click();
+        ButtonClick();
 
         if (UIManager.isRunning)
             return;
@@ -43,7 +43,7 @@ public class ToolkitManager : MonoBehaviour
 
     public void OnTreadmillButton()
     {
-        AudioManager.instance.Click();
+        ButtonClick();
 
         if (UIManager.isRunning)
             return;
@@ -52,7 +52,7 @@ public class ToolkitManager : MonoBehaviour
 
     public void OnPistonButton()
     {
-        AudioManager.instance.Click();
+        ButtonClick();
 
         if (UIManager.isRunning)
             return;
@@ -61,7 +61,7 @@ public class ToolkitManager : MonoBehaviour
 
     public void OnTrampolineButton()
     {
-        AudioManager.instance.Click();
+        ButtonClick();
 
         if (UIManager.isRunning)
             return;
@@ -70,7 +70,7 @@ public class ToolkitManager : MonoBehaviour
 
     public void OnFanButton()
     {
-        AudioManager.instance.Click();
+        ButtonClick();
 
         if (UIManager.isRunning)
             return;
@@ -79,7 +79,7 @@ public class ToolkitManager : MonoBehaviour
 
     public void OnRopeButton()
     {
-        AudioManager.instance.Click();
+        ButtonClick();
 
         if (UIManager.isRunning)
             return;
@@ -88,7 +88,7 @@ public class ToolkitManager : MonoBehaviour
 
     public void OnBalloonButton()
     {
-        AudioManager.instance.Click();
+        ButtonClick();
 
         if (UIManager.isRunning)
             return;
@@ -97,7 +97,7 @@ public class ToolkitManager : MonoBehaviour
 
     public void OnBilliardButton()
     {
-        AudioManager.instance.Click();
+        ButtonClick();
 
         if (UIManager.isRunning)
             return;
@@ -106,7 +106,7 @@ public class ToolkitManager : MonoBehaviour
 
     public void OnSoccerButton()
     {
-        AudioManager.instance.Click();
+        ButtonClick();
 
         if (UIManager.isRunning)
             return;
@@ -115,7 +115,7 @@ public class ToolkitManager : MonoBehaviour
 
     public void OnSeesawButton()
     {
-        AudioManager.instance.Click();
+        ButtonClick();
 
         if (UIManager.isRunning)
             return;
@@ -124,10 +124,18 @@ public class ToolkitManager : MonoBehaviour
 
     public void OnRampButton()
     {
-        AudioManager.instance.Click();
+        ButtonClick();
 
         if (UIManager.isRunning)
             return;
         Instantiate(rampImagePrefab, itemOffset, transform.rotation);
+    }
+
+    public void ButtonClick()
+    {
+        if (AudioManager.instance == null)
+            return;
+
+        AudioManager.instance.Click();
     }
 }
