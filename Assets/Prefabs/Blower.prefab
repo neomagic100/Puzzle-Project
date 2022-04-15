@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: -1781655306203938672}
   - component: {fileID: 3254727536514000227}
   - component: {fileID: 1999708705}
+  - component: {fileID: 8806927487532283924}
   m_Layer: 0
   m_Name: Blower
   m_TagString: Item
@@ -73,8 +74,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -990676865
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -3294356355890070705, guid: f1c73d5ba90a2d643908481eec166d42, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -336,3 +337,29 @@ PolygonCollider2D:
       - {x: -3.491964, y: -0.14297424}
       - {x: -2.641964, y: -0.14297424}
       - {x: -2.631964, y: -0.13297424}
+--- !u!61 &8806927487532283924
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7451228926875954547}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.8300505, y: -0.08109176}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.9167196, y: 0.088424414}
+    oldSize: {x: 5.62, y: 1.73}
+    newSize: {x: 5.62, y: 1.73}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.6213636, y: 0.621809}
+  m_EdgeRadius: 0

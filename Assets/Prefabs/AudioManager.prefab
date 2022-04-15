@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonClick: {fileID: 5833481488816179960}
+  volume: 0.5
 --- !u!1 &5833481488816179961
 GameObject:
   m_ObjectHideFlags: 0
@@ -86,7 +87,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9cb0772fda1d12144be7d42912802851, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 573fd97509b753d49990a99ee1f673bf, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

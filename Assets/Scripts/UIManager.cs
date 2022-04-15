@@ -22,6 +22,7 @@ public class UIManager : MonoBehaviour
     public GameObject runButton;
     public GameObject stopButton;
     public GameObject inGameOptions;
+    public GameObject victoryScreen;
 
     public static bool isRunning = false;
 
@@ -46,7 +47,7 @@ public class UIManager : MonoBehaviour
     public void OnRunButton()
     {
         // Audio
-        AudioManager.instance.buttonClick.Play();
+        AudioManager.instance.Click();
 
         // Finds the ItemImages that were created by the player
         GameObject[] _items = GameObject.FindGameObjectsWithTag("ItemImage");
@@ -82,7 +83,7 @@ public class UIManager : MonoBehaviour
     public void OnStopButton()
     {
         // Audio
-        AudioManager.instance.buttonClick.Play();
+        AudioManager.instance.Click();
 
         // Finds the current Items that have been instantiated
         GameObject[] curItems = GameObject.FindGameObjectsWithTag("Item");
@@ -108,7 +109,7 @@ public class UIManager : MonoBehaviour
     public void OnResetButton()
     {
         // Audio
-        AudioManager.instance.buttonClick.Play();
+        AudioManager.instance.Click();
 
         // Finds the ItemImages that were created by the player
         GameObject[] _items = GameObject.FindGameObjectsWithTag("ItemImage");
@@ -143,6 +144,34 @@ public class UIManager : MonoBehaviour
 
     public void OnMainMenuButton()
     {
+        // Audio
+        AudioManager.instance.Click();
+
         SceneManager.LoadScene(0);
+    }
+
+    public void OnNextLevelButton()
+    {
+        // Audio
+        AudioManager.instance.Click();
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void OnBackButton()
+    {
+        // Audio
+        AudioManager.instance.Click();
+    }
+
+    public void OnSettingsButton()
+    {
+        // Audio
+        AudioManager.instance.Click();
+    }
+
+    public void OnVictory()
+    {
+        Instantiate(victoryScreen);
     }
 }
