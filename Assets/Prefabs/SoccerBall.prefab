@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 5123928067082668621}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.47, y: 1.92, z: 0}
-  m_LocalScale: {x: 0.41996002, y: 0.39494, z: 1}
+  m_LocalScale: {x: 0.18264061, y: 0.1717594, z: 0.4349}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -133,8 +133,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 22d8260aa53194c46a401434fe9ca9fb, type: 3}
-  m_Name:
-  m_EditorClassIdentifier:
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &802688477
 Animator:
   serializedVersion: 3
@@ -150,7 +150,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage:
+  m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0

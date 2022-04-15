@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Trampoline : Item
 {
-    private float default_bounce = 6.3f;
+    public float default_bounce = 6.3f;
     private AudioSource audioSrc;
 
 
@@ -14,10 +14,10 @@ public class Trampoline : Item
     }
 
     public void Start()
-    {
+    { 
+        audioSrc = GetComponent<AudioSource>();
         audioSrc.volume = AudioManager.instance.volume;
 
-        audioSrc = GetComponent<AudioSource>();
         if (audioSrc == null)
         {
             Debug.LogError("Trampoline AudioSource sound effect is null");

@@ -1013,7 +1013,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 0bd2910543fcb6548bf1d7a6fb9679a8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2158,7 +2158,7 @@ MonoBehaviour:
   blowerImagePrefab: {fileID: 3012333427518426411, guid: 047ff7d29fd85e444837a4477d22502d, type: 3}
   treadmillImagePrefab: {fileID: 6993723891485814334, guid: b3250a77a0602e3429f414c53bec6681, type: 3}
   pistonImagePrefab: {fileID: 2014775113488057777, guid: f4ef1a554cd15854c96ba6c26be98240, type: 3}
-  trampolineImagePrefab: {fileID: 3076816551258819421, guid: 4e4eea5d0f59c224fa91f69af783fc56, type: 3}
+  trampolineImagePrefab: {fileID: 8891957076306044598, guid: 108284ce140c43e42890926f50c01972, type: 3}
   fanImagePrefab: {fileID: 4747520681916304576, guid: 56eec0bb84608a24c803d91cb01fa91d, type: 3}
   ropeImagePrefab: {fileID: 7723692008151219916, guid: 46026315969caa6438d01d43bc446e46, type: 3}
   balloonImagePrefab: {fileID: 5793123740001822868, guid: ac628f09a35da7c44905d181da691ec1, type: 3}
@@ -3091,7 +3091,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 87015d093ceed3347829d6648b886a3d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 24a017b7937641e4e8d86a89bc560576, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
