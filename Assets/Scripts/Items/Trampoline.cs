@@ -15,6 +15,8 @@ public class Trampoline : Item
 
     public void Start()
     {
+        audioSrc.volume = AudioManager.instance.volume;
+
         audioSrc = GetComponent<AudioSource>();
         if (audioSrc == null)
         {

@@ -18,6 +18,8 @@ public class Piston : Item
     // Start is called before the first frame update
     void Start()
     {
+        audioSrc.volume = AudioManager.instance.volume; 
+
         audioSrc = GetComponent<AudioSource>();
         if (audioSrc == null)
         {

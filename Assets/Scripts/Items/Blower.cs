@@ -9,8 +9,11 @@ public class Blower : Item
     private Animator blowingAnimator;
     private bool audioPlayed;
     private Vector2 vel = Vector2.zero;
-    
-  
+
+    // Need to be Global so multiple Methods can reference it
+    public GameObject target;
+    private Rigidbody2D targetRb;
+
     // When an item collides with Blower, play sound and animation
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -25,24 +28,26 @@ public class Blower : Item
                 audioSrc.Play();
             }
 
+            // In case there is no Target yet
+            if (target == null)
+                return;
+
             // Set velocity that the blower will send other item
             vel = new Vector2(5.5f, 0f);
+
+            // Set the item in the trigger zone to vel - calculated when the blower has a collision
+            targetRb.velocity += vel;
+            Debug.Log(targetRb.velocity);
         }
     }
 
     // When object is in trigger zone
     private void OnTriggerStay2D(Collider2D collision)
     {
-        GameObject target;
-        Rigidbody2D targetRb;
-
         if (collision.gameObject.CompareTag("Item"))
         {
             target = collision.gameObject;
             targetRb = target.GetComponent<Rigidbody2D>();
-
-            // Set the item in the trigger zone to vel - calculated when the blower has a collision
-            targetRb.velocity = vel;
         }
     }
 
@@ -63,6 +68,7 @@ public class Blower : Item
     {     
         // Load blowing sound fx
         audioSrc = GetComponent<AudioSource>();
+        audioSrc.volume = AudioManager.instance.volume;
 
         if (audioSrc == null)
         {

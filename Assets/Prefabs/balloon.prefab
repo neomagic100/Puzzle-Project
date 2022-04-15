@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 2366855294367970980}
   m_Layer: 0
   m_Name: balloon
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -245,8 +245,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -990676865
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f5b698c1f9ccd634a854d7ed7455f072, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
