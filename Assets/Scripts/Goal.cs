@@ -6,7 +6,7 @@ public class Goal : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D item)
     {
-        if (item.gameObject.name == "SoccerBall" || item.gameObject.name == "BilliardsBall" )
+        if (item.CompareTag("Item"))
         {
             Debug.Log("Success!");
         }
