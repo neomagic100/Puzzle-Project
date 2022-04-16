@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Trampoline : Item
 {
-    public float default_bounce = 6.3f;
+    public float default_bounce = 40.5f;
     private AudioSource audioSrc;
 
 
@@ -30,13 +30,10 @@ public class Trampoline : Item
         // If a collision is detected with an Item
         if (collision.gameObject.CompareTag("Item"))
         {
-            default_bounce *= 1.2f;
-            // If the magnitude of the vector is greater than the default bounce amount, use the magnitude
-            float magnitude = collision.transform.position.magnitude * 1.2f;
-            float bounce = (magnitude > default_bounce) ? magnitude : default_bounce;
+            Vector2 vel = new Vector2(collision.relativeVelocity.x, default_bounce);
 
             // Add a vector up with the bounce amount
-            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * bounce, ForceMode2D.Impulse);
+            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(vel, ForceMode2D.Impulse);
             
             // Play a sound effect
             audioSrc.Play();

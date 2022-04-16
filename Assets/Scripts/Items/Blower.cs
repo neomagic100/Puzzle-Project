@@ -37,7 +37,7 @@ public class Blower : Item
 
             // Set the item in the trigger zone to vel - calculated when the blower has a collision
             targetRb.velocity += vel;
-            Debug.Log(targetRb.velocity);
+            
         }
     }
 
