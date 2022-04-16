@@ -988,6 +988,50 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
+      propertyPath: usePerItem.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
+      propertyPath: usePerItem.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
+      propertyPath: usePerItem.Array.data[2]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
+      propertyPath: usePerItem.Array.data[3]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
+      propertyPath: usePerItem.Array.data[4]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
+      propertyPath: usePerItem.Array.data[5]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
+      propertyPath: usePerItem.Array.data[6]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
+      propertyPath: usePerItem.Array.data[7]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
+      propertyPath: usePerItem.Array.data[8]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
+      propertyPath: usePerItem.Array.data[9]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
+      propertyPath: usePerItem.Array.data[10]
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 951001154088987917, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
