@@ -25,7 +25,6 @@ public class Blower : Item
         if (collision.gameObject.CompareTag("Item") && !itemUsed)
         {
             itemUsed = true;
-            Debug.Log("OnCollisionEnter2D");
 
             blowingAnimator = gameObject.GetComponent<Animator>();
             blowingAnimator.Play("BlowingAnimation", 0, 0.01f);
@@ -111,7 +110,7 @@ public class Blower : Item
         {
             audioPlayed = false;
         }
-        blowingAnimator = gameObject.GetComponentInChildren<Animator>();
+      //  blowingAnimator = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame

@@ -8,19 +8,24 @@ public class Piston : Item
     private PolygonCollider2D polycol;
     private AudioSource audioSrc;
     private bool audioPlayed;
-  
-    
-    public Piston()
-    {
 
+
+    private void Awake()
+    {
+        audioSrc.Play();
+    }
+
+    private void OnDestroy()
+    {
+        audioSrc.Stop();
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        audioSrc.volume = AudioManager.instance.volume; 
-
         audioSrc = GetComponent<AudioSource>();
+        audioSrc.volume = AudioManager.instance.volume; 
+        
         if (audioSrc == null)
         {
             Debug.LogError("Trampoline AudioSource sound effect is null");
