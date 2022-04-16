@@ -123,18 +123,24 @@ public class UIManager : MonoBehaviour
             Destroy(item);
         }
 
-        // Cleans the Cache
-        foreach (GameObject item in tempItemArr)
+        if (tempItemArr != null)
         {
-            Destroy(item);
+            // Cleans the Cache
+            foreach (GameObject item in tempItemArr)
+            {
+                Destroy(item);
+            }
         }
-
-        // Removes all Items
-        foreach (GameObject item in curItems)
+        
+        if (curItems != null)
         {
-            Destroy(item);
+            // Removes all Items
+            foreach (GameObject item in curItems)
+            {
+                Destroy(item);
+            }
         }
-
+        
         // Resets all status
         runButton.SetActive(true);
         stopButton.SetActive(false);
