@@ -28,6 +28,7 @@ public class Blower : Item
             Debug.Log("OnCollisionEnter2D");
 
             blowingAnimator = gameObject.GetComponent<Animator>();
+            blowingAnimator.Play("BlowingAnimation", 0, 0.01f);
                       
             if (!audioPlayed)
             {
@@ -37,7 +38,7 @@ public class Blower : Item
             // In case there is no Target yet
             if (target == null)
             {
-                itemUsed = false;
+                // itemUsed = false;
                 return;
             }
             
