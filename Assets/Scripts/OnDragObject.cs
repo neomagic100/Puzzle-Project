@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class OnDragObject : MonoBehaviour
-{
-    
+{      
     public void OnMouseDrag()
     {
         Vector3 inWorldPosition = Input.mousePosition;
