@@ -26,7 +26,7 @@ public class Blower : Item
         {
             itemUsed = true;
 
-            blowingAnimator.Rebind();
+            blowingAnimator = gameObject.GetComponent<Animator>();
                       
             if (!audioPlayed)
             {
@@ -109,7 +109,7 @@ public class Blower : Item
         {
             audioPlayed = false;
         }
-        blowingAnimator = gameObject.GetComponent<Animator>();
+      //  blowingAnimator = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
