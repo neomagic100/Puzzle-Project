@@ -18,6 +18,7 @@ public class Timer : MonoBehaviour
     {
         timerText = GetComponent<Text>();
         timerText.color = Color.yellow;
+        startTimer();
     }
 
     // Update is called once per frame
