@@ -12,7 +12,7 @@ public class Timer : MonoBehaviour
     private string secondsString;
     private string minutesString;
     private string hoursString;
-    private bool timerPlaying;
+    public bool timerPlaying;
     private int score;
     
     // Start is called before the first frame update
