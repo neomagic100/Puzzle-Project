@@ -11,9 +11,7 @@ GameObject:
   - component: {fileID: 6411406765153094236}
   - component: {fileID: 6411406765153094235}
   - component: {fileID: 6411406765153094234}
-  - component: {fileID: 8714261628915389435}
-  - component: {fileID: 8104242628708387225}
-  - component: {fileID: 1397809545113473980}
+  - component: {fileID: 2806193373965897598}
   m_Layer: 0
   m_Name: Ramp
   m_TagString: Item
@@ -107,8 +105,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!68 &8714261628915389435
-EdgeCollider2D:
+--- !u!60 &2806193373965897598
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -121,56 +119,46 @@ EdgeCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.38, y: 5.36}
+    newSize: {x: 5.38, y: 5.36}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   m_Points:
-  - {x: -2.6975453, y: -2.6821423}
-  - {x: -2.6955903, y: -2.6772392}
-  - {x: 2.6884727, y: 2.6778772}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
---- !u!68 &8104242628708387225
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6411406765153094232}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: 2.6904142, y: -2.6816173}
-  - {x: 2.6901975, y: 2.6749382}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
---- !u!68 &1397809545113473980
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6411406765153094232}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -2.6963172, y: -2.6795402}
-  - {x: 2.6895118, y: -2.6848722}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
+    m_Paths:
+    - - {x: 2.47, y: -2.4099998}
+      - {x: 1.8299999, y: -1.77}
+      - {x: 1.65, y: -1.5799999}
+      - {x: 1.51, y: -1.4499999}
+      - {x: 1.27, y: -1.2099999}
+      - {x: 1.0699999, y: -1.03}
+      - {x: 1.1, y: -1}
+      - {x: 0.71999997, y: -0.65}
+      - {x: 0.69, y: -0.61}
+      - {x: 0.65, y: -0.62}
+      - {x: 0.47, y: -0.42}
+      - {x: 0.13, y: -0.08}
+      - {x: 0.11, y: -0.08}
+      - {x: -0.17999999, y: 0.22999999}
+      - {x: -0.26999998, y: 0.35}
+      - {x: -0.29999998, y: 0.32999998}
+      - {x: -0.59, y: 0.64}
+      - {x: -0.84, y: 0.88}
+      - {x: -1.0699999, y: 1.12}
+      - {x: -1.22, y: 1.26}
+      - {x: -1.23, y: 1.31}
+      - {x: -1.28, y: 1.3199999}
+      - {x: -1.4399999, y: 1.5}
+      - {x: -1.63, y: 1.68}
+      - {x: -1.92, y: 1.9599999}
+      - {x: -1.9399999, y: 1.9699999}
+      - {x: -2.6599998, y: 2.6799998}
+      - {x: -2.69, y: 2.6799998}
+      - {x: -2.69, y: -2.6799998}
+      - {x: 2.69, y: -2.6799998}
+      - {x: 2.69, y: -2.6399999}
+      - {x: 2.61, y: -2.54}
