@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Timer : MonoBehaviour
 {
+    private const int MAXSCORE = 1000;
     private Text timerText;
     private float timer;
     public float speed = 1;
@@ -12,7 +13,8 @@ public class Timer : MonoBehaviour
     private string minutesString;
     private string hoursString;
     private bool timerPlaying;
-
+    private int score;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -57,5 +59,37 @@ public class Timer : MonoBehaviour
     public void resetTimer()
     {
         timer = 0f;
+    }
+
+    public int getScore()
+    {
+        calculateScore();
+        return score;
+    }
+
+    private void calculateScore()
+    {
+        int factor;
+        int timerInt = Mathf.FloorToInt(timer);
+
+        if (120 - timerInt >= 0)
+        {
+            factor = 1;
+        }
+        if (180 - timerInt >= 0)
+        {
+            factor = 2;
+        }
+        else
+        {
+            factor = 3;
+        }
+
+        score = MAXSCORE - factor * timerInt;
+
+        if (score < 0)
+        {
+            score = 0;
+        }
     }
 }
