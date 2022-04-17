@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using System;
 
 public class SoccerBall : Item
 {
@@ -44,7 +41,7 @@ public class SoccerBall : Item
 
     private bool ballMoving(Vector2 currSpeed)
     {
-        if (Math.Abs(currSpeed.x - atRest.x) > 0.001 || Math.Abs(currSpeed.y - atRest.y) > 0.001)
+        if (Mathf.Abs(currSpeed.x - atRest.x) > 0.001 || Mathf.Abs(currSpeed.y - atRest.y) > 0.001)
         {
             return false;
         }
