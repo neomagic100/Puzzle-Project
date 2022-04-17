@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ToolkitManager : MonoBehaviour
 {
@@ -20,6 +21,12 @@ public class ToolkitManager : MonoBehaviour
     public float[] usePerItem; // Indexes Lines up with Indexs Above ^
 
     private Vector3 itemOffset;
+    private Vector2 selectPosition;
+    //private Rigidbody2D selectedItem;
+    private GameObject selectedItem;
+    private float mouseDownTimer;
+    private float requiredHoldTime = 1f;
+    public UnityEvent onLongClick;
 
     // An Array used to for the Run Button to identify which items are which
     public static GameObject[] itemImages;
@@ -32,10 +39,13 @@ public class ToolkitManager : MonoBehaviour
                                         seesawImagePrefab, rampImagePrefab };
 
         itemOffset = Camera.main.transform.position + new Vector3(0f, 0f, 10f);
+        mouseDownTimer = 0f;
     }
 
     void Update()
     {
+        bool isMouseDown;
+
         // Updates the Text on Screen 
         int index = 0;
         foreach (Transform child in transform)
@@ -43,6 +53,49 @@ public class ToolkitManager : MonoBehaviour
             child.GetComponent<ItemButtonUsage>().UItext.text = usePerItem[index].ToString();
             index++;
         }
+        
+        // Remove Item on Screen
+        if (Input.GetMouseButtonDown(0))
+        {
+            Debug.Log("Mouse Down for " + mouseDownTimer);
+            selectPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Vector2 pos2D = new Vector2((int)selectPosition.x, (int)selectPosition.y);
+            RaycastHit2D hit = Physics2D.Raycast(pos2D, Vector2.zero);
+
+            mouseDownTimer += Time.deltaTime;
+
+            
+
+            if (hit.collider != null && mouseDownTimer > requiredHoldTime)
+            {
+                Debug.Log("hit on " + hit.collider.gameObject.name);
+                selectedItem = hit.collider.gameObject;
+                removeItem(selectedItem);
+            }
+
+
+        }
+
+    }
+    
+    private void OnMouseDown()
+    {
+        if (selectedItem != null)
+        {
+            mouseDownTimer += Time.deltaTime;
+        }
+    }
+
+    // Remove an item from the screen
+    public void removeItem(GameObject obj)
+    {
+        Debug.Log("In remoteItem()");
+        // Remove Item on Screen
+       
+        Destroy(obj);
+        
+
+        mouseDownTimer = 0;
     }
 
     public void OnBlowerButton()
