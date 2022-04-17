@@ -188,4 +188,9 @@ public class UIManager : MonoBehaviour
 
         AudioManager.instance.Click();
     }
+
+    public void DeleteItemImage()
+    {
+       // Destroy();
+    }
 }
