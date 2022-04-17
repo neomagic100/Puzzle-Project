@@ -28,4 +28,14 @@ public class treadmill : MonoBehaviour
             audioSrc.Play();
         }
     }
+	
+	private void OnCollisionExit2D(Collision2D collision)
+    {
+        // If a collision is detected with an Item
+        if (collision.gameObject.CompareTag("Item"))
+        {
+            // Play a sound effect
+            audioSrc.Stop();
+        }
+    }
 }
