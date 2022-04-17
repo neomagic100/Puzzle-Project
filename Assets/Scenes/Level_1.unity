@@ -745,6 +745,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 602970748, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
+      propertyPath: timerPlaying
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 951001153035522383, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
