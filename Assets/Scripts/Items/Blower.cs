@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
+
 
 public class Blower : Item
 {
@@ -54,12 +54,12 @@ public class Blower : Item
         float obj_y_vel = col.gameObject.GetComponent<Rigidbody2D>().velocity.y;
         Vector2 retVect = new Vector2(default_x_vel, default_y_vel);
 
-        if (Math.Abs(obj_x_vel) > default_x_vel)
+        if (Mathf.Abs(obj_x_vel) > default_x_vel)
         {
             retVect.x *= 2;
         }
 
-        if (Math.Abs(obj_y_vel) > default_y_vel)
+        if (Mathf.Abs(obj_y_vel) > default_y_vel)
         {
             retVect.y = obj_y_vel;
         }
