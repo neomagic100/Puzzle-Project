@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using System.Collections.Generic;
 
 public class ToolkitManager : MonoBehaviour
 {
@@ -32,6 +33,8 @@ public class ToolkitManager : MonoBehaviour
     // An Array used to for the Run Button to identify which items are which
     public static GameObject[] itemImages;
 
+    public List<GameObject> itemsInPlay = new List<GameObject>();
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +43,8 @@ public class ToolkitManager : MonoBehaviour
                                         seesawImagePrefab, rampImagePrefab };
 
         itemOffset = Camera.main.transform.position + new Vector3(0f, 0f, 10f);
+
+
         mouseDownTimer = 0f;
 
         // Stores Data of Item Uses
@@ -114,21 +119,23 @@ public class ToolkitManager : MonoBehaviour
         }
     }
 
-
+    GameObject temp;
     // =============================================
     //                  Buttons
     // =============================================
     public void OnBlowerButton()
     {
         if (usePerItem[0] <= 0)
+        {
             return;
+        }
 
         ButtonClick();
 
         if (UIManager.isRunning)
             return;
-        Instantiate(blowerImagePrefab, itemOffset, transform.rotation);
-
+        temp = Instantiate(blowerImagePrefab, itemOffset, transform.rotation);
+        addToGameObjectsInPlay(temp);
         usePerItem[0]--;
     }
 
@@ -141,8 +148,8 @@ public class ToolkitManager : MonoBehaviour
 
         if (UIManager.isRunning)
             return;
-        Instantiate(treadmillImagePrefab, itemOffset, transform.rotation);
-
+        temp = Instantiate(treadmillImagePrefab, itemOffset, transform.rotation);
+        addToGameObjectsInPlay(temp);
         usePerItem[1]--;
     }
 
@@ -155,8 +162,8 @@ public class ToolkitManager : MonoBehaviour
 
         if (UIManager.isRunning)
             return;
-        Instantiate(pistonImagePrefab, itemOffset, transform.rotation);
-
+        temp = Instantiate(pistonImagePrefab, itemOffset, transform.rotation);
+        addToGameObjectsInPlay(temp);
         usePerItem[2]--;
     }
 
@@ -169,8 +176,8 @@ public class ToolkitManager : MonoBehaviour
 
         if (UIManager.isRunning)
             return;
-        Instantiate(trampolineImagePrefab, itemOffset, transform.rotation);
-
+        temp = Instantiate(trampolineImagePrefab, itemOffset, transform.rotation);
+        addToGameObjectsInPlay(temp);
         usePerItem[3]--;
     }
 
@@ -183,8 +190,8 @@ public class ToolkitManager : MonoBehaviour
 
         if (UIManager.isRunning)
             return;
-        Instantiate(fanImagePrefab, itemOffset, fanImagePrefab.transform.rotation);
-
+        temp = Instantiate(fanImagePrefab, itemOffset, fanImagePrefab.transform.rotation);
+        addToGameObjectsInPlay(temp);
         usePerItem[4]--;
     }
 
@@ -197,8 +204,8 @@ public class ToolkitManager : MonoBehaviour
 
         if (UIManager.isRunning)
             return;
-        Instantiate(ropeImagePrefab, itemOffset, transform.rotation);
-
+        temp = Instantiate(ropeImagePrefab, itemOffset, transform.rotation);
+        addToGameObjectsInPlay(temp);
         usePerItem[5]--;
     }
 
@@ -211,8 +218,8 @@ public class ToolkitManager : MonoBehaviour
 
         if (UIManager.isRunning)
             return;
-        Instantiate(balloonImagePrefab, itemOffset, transform.rotation);
-
+        temp = Instantiate(balloonImagePrefab, itemOffset, transform.rotation);
+        addToGameObjectsInPlay(temp);
         usePerItem[6]--;
     }
 
@@ -225,8 +232,8 @@ public class ToolkitManager : MonoBehaviour
 
         if (UIManager.isRunning)
             return;
-        Instantiate(billiardImagePrefab, itemOffset, transform.rotation);
-
+        temp = Instantiate(billiardImagePrefab, itemOffset, transform.rotation);
+        addToGameObjectsInPlay(temp);
         usePerItem[7]--;
     }
 
@@ -239,8 +246,8 @@ public class ToolkitManager : MonoBehaviour
 
         if (UIManager.isRunning)
             return;
-        Instantiate(soccerImagePrefab, itemOffset, transform.rotation);
-
+        temp = Instantiate(soccerImagePrefab, itemOffset, transform.rotation);
+        addToGameObjectsInPlay(temp);
         usePerItem[8]--;
     }
 
@@ -253,8 +260,8 @@ public class ToolkitManager : MonoBehaviour
 
         if (UIManager.isRunning)
             return;
-        Instantiate(seesawImagePrefab, itemOffset, transform.rotation);
-
+        temp = Instantiate(seesawImagePrefab, itemOffset, transform.rotation);
+        addToGameObjectsInPlay(temp);
         usePerItem[9]--;
     }
 
@@ -267,8 +274,8 @@ public class ToolkitManager : MonoBehaviour
 
         if (UIManager.isRunning)
             return;
-        Instantiate(rampImagePrefab, itemOffset, transform.rotation);
-
+        temp = Instantiate(rampImagePrefab, itemOffset, transform.rotation);
+        addToGameObjectsInPlay(temp);
         usePerItem[10]--;
     }
 
@@ -279,4 +286,10 @@ public class ToolkitManager : MonoBehaviour
 
         AudioManager.instance.Click();
     }
+
+    private void addToGameObjectsInPlay(GameObject obj)
+    {
+        itemsInPlay.Add(obj);
+    }
+
 }
