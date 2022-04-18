@@ -11,7 +11,7 @@ public class Timer : MonoBehaviour
     private string minutesString;
     private string hoursString;
     public bool timerPlaying;
-    private int score;
+    public int score;
     
     // Start is called before the first frame update
     void Start()
@@ -66,7 +66,7 @@ public class Timer : MonoBehaviour
         return score;
     }
 
-    private void calculateScore()
+    public void calculateScore()
     {
         int factor;
         int timerInt = Mathf.FloorToInt(timer);

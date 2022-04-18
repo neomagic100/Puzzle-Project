@@ -171,6 +171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1
   timerPlaying: 0
+  score: 0
 --- !u!1 &777345249
 GameObject:
   m_ObjectHideFlags: 0
@@ -2756,14 +2757,14 @@ MonoBehaviour:
   pistonImagePrefab: {fileID: 2014775113488057777, guid: f4ef1a554cd15854c96ba6c26be98240, type: 3}
   trampolineImagePrefab: {fileID: 8891957076306044598, guid: 108284ce140c43e42890926f50c01972, type: 3}
   fanImagePrefab: {fileID: 4747520681916304576, guid: 56eec0bb84608a24c803d91cb01fa91d, type: 3}
-  ropeImagePrefab: {fileID: 197089832074271331, guid: 9a85b71bd3e9b5646bde064db5de94f0, type: 3}
+  ropeImagePrefab: {fileID: 7231721806344757902, guid: 4c895a478d5162647a0fd965d8105917, type: 3}
   balloonImagePrefab: {fileID: 5793123740001822868, guid: ac628f09a35da7c44905d181da691ec1, type: 3}
   billiardImagePrefab: {fileID: 9142917933919330314, guid: b16d00b8dcfe84c4a82e09c220a23382, type: 3}
   soccerImagePrefab: {fileID: 8880369852847719839, guid: e742dfc6afa0c31498a6a6d6c80b84f0, type: 3}
   seesawImagePrefab: {fileID: 1137789977504234757, guid: abfbca85ffa4b06438cc0d352c5f088f, type: 3}
   rampImagePrefab: {fileID: 5364086440782209508, guid: e5c5918ba1bb60d4f841fe3ede9e8cf0, type: 3}
   usePerItem:
-  - 0
+  - 1
   - 1
   - 1
   - 1
@@ -2777,6 +2778,7 @@ MonoBehaviour:
   onLongClick:
     m_PersistentCalls:
       m_Calls: []
+  itemsInPlay: []
 --- !u!114 &951001153947259869
 MonoBehaviour:
   m_ObjectHideFlags: 0
