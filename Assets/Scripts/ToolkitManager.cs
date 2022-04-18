@@ -19,7 +19,7 @@ public class ToolkitManager : MonoBehaviour
     [Header("Number of Uses per Item")]
     [Header("Lines up with Order from Above")]
     public float[] usePerItem; // Indexes Lines up with Indexs Above ^
-    public float[] tempUsePerItem;
+    private float[] tempUsePerItem = new float[11];
 
 
     private Vector3 itemOffset;
@@ -36,10 +36,6 @@ public class ToolkitManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        usePerItem = new float[11];
-        tempUsePerItem = new float[11];
-        Debug.Log(usePerItem.Length + " -- " + tempUsePerItem.Length);
-
         // Saving ImagePrefabs in Array
         GameObject[] itemImages = new GameObject[] { blowerImagePrefab, treadmillImagePrefab, pistonImagePrefab, trampolineImagePrefab,
                                         fanImagePrefab, ropeImagePrefab, balloonImagePrefab, billiardImagePrefab, soccerImagePrefab,
@@ -49,9 +45,25 @@ public class ToolkitManager : MonoBehaviour
         itemOffset = Camera.main.transform.position + new Vector3(0f, 0f, 10f);
         mouseDownTimer = 0f;
 
+        // Stores Uses Date of Items
         for (int i = 0; i < usePerItem.Length; i++)
         {
             tempUsePerItem[i] = usePerItem[i];
+        }
+
+        // Organizes the Buttons on Runtime
+        int index = 0;
+        foreach (Transform child in transform)
+        {
+            if (tempUsePerItem[index] == 0)
+            {
+                child.gameObject.SetActive(false);
+            }
+            else
+            {
+                child.gameObject.SetActive(true);
+            }
+            index++;
         }
     }
 

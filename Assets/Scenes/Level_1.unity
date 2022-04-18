@@ -830,26 +830,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 951001153473168633, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 951001153473168633, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 951001153473168633, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 951001153473168633, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 951001153473168633, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 172.09575
       objectReference: {fileID: 0}
     - target: {fileID: 951001153473168633, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: -423.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 951001153473168638, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 951001153490052254, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
@@ -1037,8 +1041,56 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
-      propertyPath: usePerItem.Array.data[4]
+      propertyPath: usePerItem.Array.data[1]
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
+      propertyPath: tempUsePerItem.Array.size
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
+      propertyPath: tempUsePerItem.Array.data[0]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
+      propertyPath: tempUsePerItem.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
+      propertyPath: tempUsePerItem.Array.data[2]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
+      propertyPath: tempUsePerItem.Array.data[3]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
+      propertyPath: tempUsePerItem.Array.data[4]
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
+      propertyPath: tempUsePerItem.Array.data[5]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
+      propertyPath: tempUsePerItem.Array.data[6]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
+      propertyPath: tempUsePerItem.Array.data[7]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
+      propertyPath: tempUsePerItem.Array.data[8]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
+      propertyPath: tempUsePerItem.Array.data[9]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 951001153947259870, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
+      propertyPath: tempUsePerItem.Array.data[10]
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 951001154088987917, guid: afa801f85d7a54644845c120c567ab3b, type: 3}
       propertyPath: m_AnchorMax.y
