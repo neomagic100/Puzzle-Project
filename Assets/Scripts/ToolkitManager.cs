@@ -19,6 +19,7 @@ public class ToolkitManager : MonoBehaviour
     [Header("Number of Uses per Item")]
     [Header("Lines up with Order from Above")]
     public float[] usePerItem; // Indexes Lines up with Indexs Above ^
+    private float[] tempUsePerItem = new float[11];
 
     private Vector3 itemOffset;
     private Vector2 selectPosition;
@@ -40,6 +41,27 @@ public class ToolkitManager : MonoBehaviour
 
         itemOffset = Camera.main.transform.position + new Vector3(0f, 0f, 10f);
         mouseDownTimer = 0f;
+
+        // Stores Data of Item Uses
+        for (int i = 0; i < usePerItem.Length; i++)
+        {
+            tempUsePerItem[i] = usePerItem[i];
+        }
+
+        // Aligns the Buttons that are even usables
+        int index = 0;
+        foreach (Transform child in transform)
+        {
+            if (tempUsePerItem[index] == 0)
+            {
+                child.gameObject.SetActive(false);
+            }
+            else
+            {
+                child.gameObject.SetActive(true);
+            }
+            index++;
+        }
     }
 
     void Update()
@@ -98,6 +120,19 @@ public class ToolkitManager : MonoBehaviour
         mouseDownTimer = 0;
     }
 
+    // On Reset Button, restores the Item Uses
+    public void ResetItemUses()
+    {
+        for (int i = 0; i < usePerItem.Length; i++)
+        {
+            usePerItem[i] = tempUsePerItem[i];
+        }
+    }
+
+
+    // =============================================
+    //                  Buttons
+    // =============================================
     public void OnBlowerButton()
     {
         if (usePerItem[0] <= 0)
