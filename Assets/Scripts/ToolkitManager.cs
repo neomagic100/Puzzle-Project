@@ -24,7 +24,6 @@ public class ToolkitManager : MonoBehaviour
 
     private Vector3 itemOffset;
     private Vector2 selectPosition;
-    //private Rigidbody2D selectedItem;
     private GameObject selectedItem;
     private float mouseDownTimer;
     private float requiredHoldTime = 1f;
@@ -33,6 +32,7 @@ public class ToolkitManager : MonoBehaviour
     // An Array used to for the Run Button to identify which items are which
     public static GameObject[] itemImages;
 
+    // List to keep track of Instantiated items in the play area
     public List<GameObject> itemsInPlay = new List<GameObject>();
     
     // Start is called before the first frame update
@@ -119,10 +119,13 @@ public class ToolkitManager : MonoBehaviour
         }
     }
 
-    GameObject temp;
+
     // =============================================
     //                  Buttons
     // =============================================
+
+    private GameObject temp; // Temporary variable to hold a GameObject when instantiated
+
     public void OnBlowerButton()
     {
         if (usePerItem[0] <= 0)
@@ -287,6 +290,7 @@ public class ToolkitManager : MonoBehaviour
         AudioManager.instance.Click();
     }
 
+    // Add the instantiated item into the itemsInPlay list
     private void addToGameObjectsInPlay(GameObject obj)
     {
         itemsInPlay.Add(obj);
