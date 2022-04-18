@@ -66,8 +66,6 @@ public class ToolkitManager : MonoBehaviour
 
     void Update()
     {
-        bool isMouseDown;
-
         // Updates the Text on Screen 
         int index = 0;
         foreach (Transform child in transform)
@@ -75,38 +73,26 @@ public class ToolkitManager : MonoBehaviour
             child.GetComponent<ItemButtonUsage>().UItext.text = usePerItem[index].ToString();
             index++;
         }
-        
-        // Remove Item on Screen
-        if (Input.GetMouseButtonDown(0))
-        {
-            Debug.Log("Mouse Down for " + mouseDownTimer);
-            selectPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            Vector2 pos2D = new Vector2((int)selectPosition.x, (int)selectPosition.y);
-            RaycastHit2D hit = Physics2D.Raycast(pos2D, Vector2.zero);
-
-            mouseDownTimer += Time.deltaTime;
-
-            
-
-            if (hit.collider != null && mouseDownTimer > requiredHoldTime)
-            {
-                Debug.Log("hit on " + hit.collider.gameObject.name);
-                selectedItem = hit.collider.gameObject;
-                removeItem(selectedItem);
-            }
-
-
-        }
-
     }
-    
+
+    // Remove Item on Screen
     private void OnMouseDown()
     {
-        if (selectedItem != null)
+        Debug.Log("Mouse Down for " + mouseDownTimer);
+        selectPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 pos2D = new Vector2((int)selectPosition.x, (int)selectPosition.y);
+        RaycastHit2D hit = Physics2D.Raycast(pos2D, Vector2.zero);
+
+        mouseDownTimer += Time.deltaTime;
+
+        if (hit.collider != null && mouseDownTimer > requiredHoldTime)
         {
-            mouseDownTimer += Time.deltaTime;
+            Debug.Log("hit on " + hit.collider.gameObject.name);
+            selectedItem = hit.collider.gameObject;
+            removeItem(selectedItem);
         }
     }
+        
 
     // Remove an item from the screen
     public void removeItem(GameObject obj)
@@ -115,8 +101,7 @@ public class ToolkitManager : MonoBehaviour
         // Remove Item on Screen
        
         Destroy(obj);
-        
-
+   
         mouseDownTimer = 0;
     }
 
