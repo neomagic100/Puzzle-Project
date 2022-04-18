@@ -43,6 +43,9 @@ public class UIManager : MonoBehaviour
         inGameOptions.SetActive(false);
     }
 
+    // =============================================
+    //                  Buttons
+    // =============================================
     public void OnRunButton()
     {
         // Audio
@@ -187,10 +190,5 @@ public class UIManager : MonoBehaviour
             return;
 
         AudioManager.instance.Click();
-    }
-
-    public void DeleteItemImage()
-    {
-       // Destroy();
     }
 }

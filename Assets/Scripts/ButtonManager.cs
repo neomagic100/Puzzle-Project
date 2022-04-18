@@ -7,13 +7,23 @@ public class ButtonManager : MonoBehaviour
     [Header("Unity References")]
     public GameObject volumeSlider;
 
+    [Header("Unlocks")]
+    public float unlocks = 1;        // 1 is Unlocked up to Level 1 -- 2 is Unlocked up to Level 2 -- so on...
+
     [Header("Script References")]
     private Slider slider;
-
+        
     void Start()
     {
         slider = volumeSlider.GetComponent<Slider>();
         slider.value = AudioManager.instance.volume;
+
+        // Loads any Saved Data
+        float[] data = SaveData.LoadGame();
+
+        if (data == null)
+            return;
+        unlocks = data[0];
     }
 
     void Update()
@@ -22,6 +32,9 @@ public class ButtonManager : MonoBehaviour
         AudioManager.instance.volume = slider.value;
     }
 
+    // =============================================
+    //                  Buttons
+    // =============================================
     public void onPlayButton()
     {
         AudioManager.instance.Click();
@@ -53,12 +66,20 @@ public class ButtonManager : MonoBehaviour
     {
         AudioManager.instance.Click();
 
+        // Locked Unless Unlocked
+        if (unlocks < 2)
+            return;
+
         SceneManager.LoadScene(2);
     }
 
     public void OnLevelThree()
     {
         AudioManager.instance.Click();
+
+        // Locked Unless Unlocked
+        if (unlocks < 3)
+            return;
 
         SceneManager.LoadScene(3);
     }
