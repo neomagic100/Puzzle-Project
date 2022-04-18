@@ -9,6 +9,7 @@ public class level2 : MonoBehaviour
     {
         audioSrc = GetComponent<AudioSource>();
         audioSrc.volume = AudioManager.instance.volume;
+        audioSrc.volume *= 0.5f;
     }
 
     // Update is called once per frame
