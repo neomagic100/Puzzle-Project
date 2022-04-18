@@ -23,6 +23,12 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
     }
 
+    void Start()
+    {
+        float[] data = SaveData.LoadGame();
+        volume = data[1];
+    }
+
     public void Click()
     {
         buttonClick.volume = volume;
