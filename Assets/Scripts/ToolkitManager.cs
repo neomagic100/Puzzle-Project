@@ -198,7 +198,7 @@ public class ToolkitManager : MonoBehaviour
 
         if (UIManager.isRunning)
             return;
-        Instantiate(fanImagePrefab, itemOffset, transform.rotation);
+        Instantiate(fanImagePrefab, itemOffset, fanImagePrefab.transform.rotation);
 
         usePerItem[4]--;
     }
