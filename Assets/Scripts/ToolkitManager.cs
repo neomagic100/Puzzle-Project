@@ -19,6 +19,8 @@ public class ToolkitManager : MonoBehaviour
     [Header("Number of Uses per Item")]
     [Header("Lines up with Order from Above")]
     public float[] usePerItem; // Indexes Lines up with Indexs Above ^
+    public float[] tempUsePerItem;
+
 
     private Vector3 itemOffset;
     private Vector2 selectPosition;
@@ -34,12 +36,23 @@ public class ToolkitManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        usePerItem = new float[11];
+        tempUsePerItem = new float[11];
+        Debug.Log(usePerItem.Length + " -- " + tempUsePerItem.Length);
+
+        // Saving ImagePrefabs in Array
         GameObject[] itemImages = new GameObject[] { blowerImagePrefab, treadmillImagePrefab, pistonImagePrefab, trampolineImagePrefab,
                                         fanImagePrefab, ropeImagePrefab, balloonImagePrefab, billiardImagePrefab, soccerImagePrefab,
                                         seesawImagePrefab, rampImagePrefab };
 
+        
         itemOffset = Camera.main.transform.position + new Vector3(0f, 0f, 10f);
         mouseDownTimer = 0f;
+
+        for (int i = 0; i < usePerItem.Length; i++)
+        {
+            tempUsePerItem[i] = usePerItem[i];
+        }
     }
 
     void Update()
@@ -53,6 +66,7 @@ public class ToolkitManager : MonoBehaviour
             child.GetComponent<ItemButtonUsage>().UItext.text = usePerItem[index].ToString();
             index++;
         }
+
         
         // Remove Item on Screen
         if (Input.GetMouseButtonDown(0))
@@ -77,6 +91,8 @@ public class ToolkitManager : MonoBehaviour
         }
 
     }
+
+
     
     private void OnMouseDown()
     {
@@ -98,6 +114,18 @@ public class ToolkitManager : MonoBehaviour
         mouseDownTimer = 0;
     }
 
+    // On Reset, resets the number of Items used
+    public void ResetItemUses()
+    {
+        for (int i = 0; i < usePerItem.Length; i++)
+        {
+            usePerItem[i] = tempUsePerItem[i];
+        }
+    }
+
+    // =================================================
+    //                    Buttons
+    // =================================================
     public void OnBlowerButton()
     {
         if (usePerItem[0] <= 0)

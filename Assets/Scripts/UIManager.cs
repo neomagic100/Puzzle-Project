@@ -21,6 +21,7 @@ public class UIManager : MonoBehaviour
     public GameObject stopButton;
     public GameObject inGameOptions;
     public GameObject victoryScreen;
+    public ToolkitManager toolkit;
 
     public static bool isRunning = false;
 
@@ -142,6 +143,7 @@ public class UIManager : MonoBehaviour
         // Resets all status
         runButton.SetActive(true);
         stopButton.SetActive(false);
+        toolkit.ResetItemUses();
 
         isRunning = false;
     }
