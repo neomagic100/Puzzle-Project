@@ -219,16 +219,24 @@ PrefabInstance:
       value: Screen Edge
       objectReference: {fileID: 0}
     - target: {fileID: 2851017577675357928, guid: 54f2b7388df763243b2cbf5fdc7c3ddc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.98586
+      objectReference: {fileID: 0}
+    - target: {fileID: 2851017577675357928, guid: 54f2b7388df763243b2cbf5fdc7c3ddc, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2.5504
+      value: 2.5143373
+      objectReference: {fileID: 0}
+    - target: {fileID: 2851017577675357928, guid: 54f2b7388df763243b2cbf5fdc7c3ddc, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.98586
       objectReference: {fileID: 0}
     - target: {fileID: 2851017577675357928, guid: 54f2b7388df763243b2cbf5fdc7c3ddc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.15
+      value: 0.23
       objectReference: {fileID: 0}
     - target: {fileID: 2851017577675357928, guid: 54f2b7388df763243b2cbf5fdc7c3ddc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.18
+      value: 0.16
       objectReference: {fileID: 0}
     - target: {fileID: 2851017577675357935, guid: 54f2b7388df763243b2cbf5fdc7c3ddc, type: 3}
       propertyPath: m_Size.x
