@@ -42,7 +42,8 @@ public class UIManager : MonoBehaviour
         stopButton.SetActive(false);
         inGameOptions.SetActive(false);
 
-        OnResetButton();
+        isRunning = false;
+        //OnResetButton();
     }
 
     // =============================================
