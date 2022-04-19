@@ -20,9 +20,9 @@ public class rope : MonoBehaviour
         // If a collision is detected with an Item
         if (collision.gameObject.CompareTag("sharp"))
         {
-			Destroy(gameObject);
+			//Destroy(gameObject);
             // Play a sound effect
-            audioSrc.Play();
+            // audioSrc.Play();
         }
     }
 }

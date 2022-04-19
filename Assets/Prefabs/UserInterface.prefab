@@ -2300,6 +2300,8 @@ MonoBehaviour:
   inGameOptions: {fileID: 777345249}
   victoryScreen: {fileID: 3367590466554550771, guid: a608902c536a91e469d58ef3233052ba, type: 3}
   toolkit: {fileID: 951001153947259870}
+  levelTwoSetup: {fileID: 8250186160159748533, guid: 0cd28589c7775f24b9ebbd272edddf24, type: 3}
+  sceneIndex: 0
 --- !u!222 &701512358
 CanvasRenderer:
   m_ObjectHideFlags: 0

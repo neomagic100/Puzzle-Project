@@ -15,7 +15,7 @@ public class Goal : MonoBehaviour
 
             // Saves the Game
             float volume = AudioManager.instance.volume;
-            float unlocks = SceneManager.GetActiveScene().buildIndex;
+            float unlocks = SceneManager.GetActiveScene().buildIndex + 1;
 
             SaveData.SaveGame(unlocks, volume);
             Debug.Log("Success!");

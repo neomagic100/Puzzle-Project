@@ -22,8 +22,11 @@ public class UIManager : MonoBehaviour
     public GameObject inGameOptions;
     public GameObject victoryScreen;
     public ToolkitManager toolkit;
+    public GameObject levelTwoSetup;
 
     public static bool isRunning = false;
+
+    public float sceneIndex;
 
     private GameObject[] tempItemArr;
 
@@ -46,7 +49,10 @@ public class UIManager : MonoBehaviour
         inGameOptions.SetActive(false);
 
         isRunning = false;
-        //OnResetButton();
+
+        sceneIndex = SceneManager.GetActiveScene().buildIndex;
+        if (sceneIndex == 2)
+            Instantiate(levelTwoSetup);
     }
 
     // =============================================
@@ -123,6 +129,9 @@ public class UIManager : MonoBehaviour
         stopButton.SetActive(false);
 
         isRunning = false;
+
+        if (sceneIndex == 2)
+            ResetLevelTwo();
     }
 
     public void OnResetButton()
@@ -171,6 +180,9 @@ public class UIManager : MonoBehaviour
         toolkit.ResetItemUses();
 
         isRunning = false;
+
+        if (sceneIndex == 2)
+            ResetLevelTwo();
     }
 
     public void OnMainMenuButton()
@@ -212,5 +224,14 @@ public class UIManager : MonoBehaviour
             return;
 
         AudioManager.instance.Click();
+    }
+
+    // Utility Function
+    private void ResetLevelTwo()
+    {
+        GameObject level = GameObject.Find("Level2Setup(Clone)");
+
+        Destroy(level);
+        Instantiate(levelTwoSetup);
     }
 }

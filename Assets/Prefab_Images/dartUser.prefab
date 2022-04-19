@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -8637357904596955274}
   - component: {fileID: 8474324947723010793}
   m_Layer: 6
-  m_Name: dart
+  m_Name: dartUser
   m_TagString: sharp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
