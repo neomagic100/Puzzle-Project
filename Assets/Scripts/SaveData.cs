@@ -8,7 +8,7 @@ public static class SaveData
     {
         BinaryFormatter formatter = new BinaryFormatter();
         string path = Application.persistentDataPath + "/save.save";
-        FileStream stream = new FileStream(path, FileMode.Open);
+        FileStream stream = new FileStream(path, FileMode.Create);
 
         float[] data = new float[2];
 
