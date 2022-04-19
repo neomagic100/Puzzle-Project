@@ -3,14 +3,9 @@ using UnityEngine;
 public class Trampoline : Item
 {
     public float default_bounce = 40.5f;
+    public float default_force_up = 15.0f;
     private AudioSource audioSrc;
-
-
-    public Trampoline()
-    {
-
-    }
-
+    
     public void Start()
     { 
         audioSrc = GetComponent<AudioSource>();
@@ -32,9 +27,18 @@ public class Trampoline : Item
 
             // Add a vector up with the bounce amount
             collision.gameObject.GetComponent<Rigidbody2D>().AddForce(vel, ForceMode2D.Impulse);
-            
-            // Play a sound effect
+        }
+    }
+
+    // When the item leaves the trampoline, add more force up
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Item"))
+        {
+            // Play sound effect
             audioSrc.Play();
+            Vector2 vel = collision.gameObject.GetComponent<Rigidbody2D>().velocity;
+            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(vel.x, vel.y * default_force_up), ForceMode2D.Impulse);
         }
     }
 }
