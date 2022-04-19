@@ -29,13 +29,16 @@ public class UIManager : MonoBehaviour
 
     // Same format as itemImages array so that they keep track of which items are which
     public static GameObject[] items;
-
+    public static GameObject[] objectiveItems;
     void Start()
     {
         // Gets the Array of Actual Items
         items = new GameObject[] { blowerPrefab, treadmillPrefab, pistonPrefab, trampolinePrefab,
                                    fanPrefab, ropePrefab, balloonPrefab, billiardPrefab, soccerPrefab,
                                    seesawPrefab, rampPrefab };
+
+        // Finds all Objective Items like Soccer Ball or Dart
+        objectiveItems = GameObject.FindGameObjectsWithTag("ObjectiveItem");
 
         // Defaults these buttons
         runButton.SetActive(true);
@@ -65,7 +68,7 @@ public class UIManager : MonoBehaviour
             return;
 
         
-
+        // Runs the Toolkit Items
         for (int i = 0; i < _items.Length; i++)
         {
             for (int j = 0; j < items.Length; j++)
@@ -76,6 +79,12 @@ public class UIManager : MonoBehaviour
                     _items[i].SetActive(false);
                 }
             }                        
+        }
+
+        for (int i = 0; i < objectiveItems.Length; i++)
+        {
+            Instantiate(objectiveItems[i].GetComponent<ItemID>().prefab, objectiveItems[i].transform.position, objectiveItems[i].transform.rotation);
+            objectiveItems[i].SetActive(false);
         }
 
         // Toggles Buttons
@@ -94,6 +103,11 @@ public class UIManager : MonoBehaviour
         GameObject[] curItems = GameObject.FindGameObjectsWithTag("Item");
 
         foreach (GameObject item in tempItemArr)
+        {
+            item.SetActive(true);
+        }
+
+        foreach (GameObject item in objectiveItems)
         {
             item.SetActive(true);
         }
@@ -128,6 +142,11 @@ public class UIManager : MonoBehaviour
             Destroy(item);
         }
 
+        foreach (GameObject item in objectiveItems)
+        {
+            item.SetActive(true);
+        }
+
         if (tempItemArr != null)
         {
             // Cleans the Cache
@@ -145,7 +164,7 @@ public class UIManager : MonoBehaviour
                 Destroy(item);
             }
         }
-        
+                       
         // Resets all status
         runButton.SetActive(true);
         stopButton.SetActive(false);

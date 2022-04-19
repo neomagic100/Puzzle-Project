@@ -685,63 +685,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!1001 &1424488226
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 208702493091503941, guid: 32b6cc656d359ac44906d28d24ad86d8, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 208702493091503941, guid: 32b6cc656d359ac44906d28d24ad86d8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4.95
-      objectReference: {fileID: 0}
-    - target: {fileID: 208702493091503941, guid: 32b6cc656d359ac44906d28d24ad86d8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 208702493091503941, guid: 32b6cc656d359ac44906d28d24ad86d8, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 208702493091503941, guid: 32b6cc656d359ac44906d28d24ad86d8, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 208702493091503941, guid: 32b6cc656d359ac44906d28d24ad86d8, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 208702493091503941, guid: 32b6cc656d359ac44906d28d24ad86d8, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 208702493091503941, guid: 32b6cc656d359ac44906d28d24ad86d8, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 208702493091503941, guid: 32b6cc656d359ac44906d28d24ad86d8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 208702493091503941, guid: 32b6cc656d359ac44906d28d24ad86d8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 208702493091503941, guid: 32b6cc656d359ac44906d28d24ad86d8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5123928067082668621, guid: 32b6cc656d359ac44906d28d24ad86d8, type: 3}
-      propertyPath: m_Name
-      value: SoccerBall_Goal
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 32b6cc656d359ac44906d28d24ad86d8, type: 3}
 --- !u!1001 &1681857360
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -767,7 +710,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4886910089468414846, guid: 17a363e1e79bd314eb88d32dc266855e, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4886910089468414846, guid: 17a363e1e79bd314eb88d32dc266855e, type: 3}
       propertyPath: m_LocalScale.x
@@ -1464,6 +1407,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &2139464305755421128
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2554423371135575381, guid: 6d82c2e5c118b904bac1d435b663b76d, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554423371135575381, guid: 6d82c2e5c118b904bac1d435b663b76d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.264625
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554423371135575381, guid: 6d82c2e5c118b904bac1d435b663b76d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.05074179
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554423371135575381, guid: 6d82c2e5c118b904bac1d435b663b76d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554423371135575381, guid: 6d82c2e5c118b904bac1d435b663b76d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554423371135575381, guid: 6d82c2e5c118b904bac1d435b663b76d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554423371135575381, guid: 6d82c2e5c118b904bac1d435b663b76d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554423371135575381, guid: 6d82c2e5c118b904bac1d435b663b76d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554423371135575381, guid: 6d82c2e5c118b904bac1d435b663b76d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554423371135575381, guid: 6d82c2e5c118b904bac1d435b663b76d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554423371135575381, guid: 6d82c2e5c118b904bac1d435b663b76d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7389718863938924637, guid: 6d82c2e5c118b904bac1d435b663b76d, type: 3}
+      propertyPath: m_Name
+      value: SoccerBallGoal
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6d82c2e5c118b904bac1d435b663b76d, type: 3}
 --- !u!1001 &8769164329843718579
 PrefabInstance:
   m_ObjectHideFlags: 0

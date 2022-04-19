@@ -11,6 +11,9 @@ public class fan : Item
 
     private void Awake()
     {
+        audioSrc = GetComponent<AudioSource>();
+        audioSrc.volume = AudioManager.instance.volume;
+
         audioSrc.Play();
     }
 
@@ -22,8 +25,7 @@ public class fan : Item
     // Start is called before the first frame update
     void Start()
     {
-        audioSrc = GetComponent<AudioSource>();
-        audioSrc.volume = AudioManager.instance.volume; 
+
         
         if (audioSrc == null)
         {
