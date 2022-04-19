@@ -144,3 +144,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 050dd439eb3fbb04f8d756c246097765, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  victoryScreen: {fileID: 3367590466554550771, guid: a608902c536a91e469d58ef3233052ba, type: 3}
