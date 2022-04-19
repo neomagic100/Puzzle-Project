@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 2366855294367970980}
   m_Layer: 0
   m_Name: balloon
-  m_TagString: Item
+  m_TagString: goal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86,13 +86,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d291b6273724ab4189c4e5fa93c42d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  victoryScreen: {fileID: 3367590466554550771, guid: a608902c536a91e469d58ef3233052ba, type: 3}
   rb: {fileID: 4732723645744244391}
   balloon: {fileID: 823795149837207850}
-  SharpCheck: {fileID: 8714466802621645134}
-  SharpCheckRadius: 1.4
-  WhatIsSharp:
-    serializedVersion: 2
-    m_Bits: 8
 --- !u!95 &5305626997952961293
 Animator:
   serializedVersion: 3
